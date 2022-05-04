@@ -173,7 +173,7 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="🤝Kömək",callback_data="help_back"),InlineKeyboardButton(text="🛡Yaradıcım🛡",url="https://t.me/BTCahilqaqas")]]
+    keyboard = [[InlineKeyboardButton(text="🤝Kömək",callback_data="help_back"),InlineKeyboardButton(text="🛡Yaradıcım🛡",url="https://t.me/TechMoon_Aze")]]
     keyboard += [[InlineKeyboardButton(text="🌐Məni bir qrupa əlavə et", callback_data="main_connect"),InlineKeyboardButton(text="⚜️Əlavə et⚜️",url="t.me/{}?startgroup=true".format(bot.username))]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
@@ -275,7 +275,7 @@ def get_help(bot: Bot, update: Update):
         update.effective_message.reply_text("Mümkün rəyləri görmək üçüm özəldən yaz.",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="⚜️Kömək",url="t.me/{}?start=help".format(bot.username))],  
-                                                [InlineKeyboardButton(text="🛡Yaradıcı ilə əlaqə",url="https://t.me/BTCahilqaqas")]]))
+                                                [InlineKeyboardButton(text="🛡Yaradıcı ilə əlaqə",url="https://t.me/TechMoon")]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
